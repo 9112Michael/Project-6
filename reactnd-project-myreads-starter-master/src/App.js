@@ -17,6 +17,7 @@ class BooksApp extends React.Component {
     return (
       <div className="app">
         {this.state.showSearchPage ? (
+          //Beginning Search page
           <div className="search-books">
             <div className="search-books-bar">
               <a className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</a>
@@ -37,17 +38,21 @@ class BooksApp extends React.Component {
               <ol className="books-grid"></ol>
             </div>
           </div>
+          //End Search page
         ) : (
+          //Start Main page
           <div className="list-books">
             <div className="list-books-title">
               <h1>MyReads</h1>
             </div>
             <div className="list-books-content">
               <div>
+                {/*Start of Bookshelf*/}
                 <div className="bookshelf">
                   <h2 className="bookshelf-title">Currently Reading</h2>
                   <div className="bookshelf-books">
                     <ol className="books-grid">
+                    {/*Start of Book*/}
                       <li>
                         <div className="book">
                           <div className="book-top">
@@ -66,6 +71,7 @@ class BooksApp extends React.Component {
                           <div className="book-authors">Harper Lee</div>
                         </div>
                       </li>
+                      {/*End of Book*/}
                       <li>
                         <div className="book">
                           <div className="book-top">
@@ -87,6 +93,7 @@ class BooksApp extends React.Component {
                     </ol>
                   </div>
                 </div>
+                {/*End of Bookshelf*/}
                 <div className="bookshelf">
                   <h2 className="bookshelf-title">Want to Read</h2>
                   <div className="bookshelf-books">
@@ -197,6 +204,7 @@ class BooksApp extends React.Component {
               <a onClick={() => this.setState({ showSearchPage: true })}>Add a book</a>
             </div>
           </div>
+          //End Main page
         )}
       </div>
     )
