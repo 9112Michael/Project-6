@@ -1,8 +1,25 @@
 import React, { Component } from 'react'
 
 export default class Mainpage extends Component {
+
+  shelveBooks = (books) => { 
+
+    const currently = books.filter(book => book.shelf === 'currentlyReading');
+    const want = books.filter(book => book.shelf === 'wantToRead');
+    const read = books.filter(book => book.shelf === 'read');
+
+
+    return [
+      {type: 'Currently Reading', books: currently},
+      {type: 'Want To Read', books: want},
+      {type: 'Read', books: read}
+    ]
+  }
+
   render() {
-      const {searchClick} = this.props;
+      const {searchClick, books} = this.props;
+      console.log(books);
+      console.log(this.shelveBooks(books));
     return (
        //Start Main page
        <div className="list-books">

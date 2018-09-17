@@ -3,7 +3,7 @@ import * as BooksAPI from './Data/BooksAPI'
 import './App.css'
 import SearchPage from './Components/Searchpage'
 import MainPage from './Components/Mainpage'
-import {Bookdata} from './Data/Bookdata'
+import {APIBooks} from './Data/Bookdata'
 
 class BooksApp extends React.Component {
   state = {
@@ -26,6 +26,7 @@ class BooksApp extends React.Component {
 
   render() {
 
+    const books = APIBooks;
     
 
     return (
@@ -33,7 +34,7 @@ class BooksApp extends React.Component {
         {this.state.showSearchPage ? (
          <SearchPage backClick={this.backClick} />
         ) : (
-         <MainPage searchClick={this.searchClick} />
+         <MainPage books={books} searchClick={this.searchClick} />
         )}
       </div>
     )
