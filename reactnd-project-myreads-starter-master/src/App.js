@@ -40,15 +40,20 @@ constructor(props) {
     this.setState((state,props) => {
       const books = state.books;
 
-      const newBooks = books.map(book => {
+      if(!books.includes(moveBook)){
+        moveBook.shelf=shelfDiff;
+        books.push(moveBook);
+      }
+      else{
+      books.map(book => {
         if (book.id === moveBook.id){
           book.shelf = shelfDiff
         }
 
         return book;
       })
-
-      return { books: newBooks}
+    }
+      return { books }
     })
      }
   
@@ -58,7 +63,7 @@ constructor(props) {
     return (
       <div className="app">
         {this.state.showSearchPage ? (
-         <SearchPage backClick={this.backClick} />
+         <SearchPage backClick={this.backClick} book={books} swapShelf={this.swapShelf} />
         ) : (
          <MainPage
           books={books}
