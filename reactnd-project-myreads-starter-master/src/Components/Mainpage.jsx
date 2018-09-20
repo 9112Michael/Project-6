@@ -19,9 +19,9 @@ export default class Mainpage extends Component {
 
   render() {
 
-      const {searchClick, books} = this.props;
+      const {searchClick, books, swapShelf} = this.props;
       const shelves= this.shelveBooks(books);
-      console.log(shelves);
+      
 
     return (
        //Start Main page
@@ -32,7 +32,7 @@ export default class Mainpage extends Component {
        <div className="list-books-content">
          <div>
 
-           {shelves.map(shelf => <Shelves key={shelf.type} shelf={shelf}/>)}
+           {shelves.map(shelf => <Shelves key={shelf.type} shelf={shelf} swapShelf={swapShelf} />)}
 
            
          </div>

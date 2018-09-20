@@ -17,6 +17,7 @@ export default class Books extends Component {
 
   swapShelf= (event) => {
     const shelf = event.target.value;
+    this.props.swapShelf(this.props.book, shelf)
     this.setState({ shelf })
   }
   
