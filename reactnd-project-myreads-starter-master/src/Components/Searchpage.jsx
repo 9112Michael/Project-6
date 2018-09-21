@@ -10,7 +10,8 @@ export default class Searchpage extends Component {
   
     this.state = {
        books: [],
-       query: ''
+       query: '',
+       input: ''
     }
   }
 
@@ -41,7 +42,7 @@ export default class Searchpage extends Component {
         //Beginning Search page
           <div className="search-books">
             <div className="search-books-bar">
-              <Link to="/" className="close-search" onClick={backClick}>Close</Link>
+              <Link to= "/" className="close-search" onClick={backClick}>Close</Link>
               <div className="search-books-input-wrapper">
                 {/*
                   NOTES: The search from BooksAPI is limited to a particular set of search terms.
