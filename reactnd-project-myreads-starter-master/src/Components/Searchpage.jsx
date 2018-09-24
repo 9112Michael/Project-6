@@ -15,8 +15,8 @@ export default class Searchpage extends Component {
     }
   }
 
-  synchronizeBooks = (queryListOfBooks) => {
-    return(queryListOfBooks.map(book => {
+  synchronizeBooks = (query) => {
+    return(query.map(book => {
       const bookMine = this.props.book.find(item => item.id === book.id);
       if (bookMine) {
         book['shelf'] = bookMine.shelf;
@@ -42,7 +42,7 @@ export default class Searchpage extends Component {
         //Beginning Search page
           <div className="search-books">
             <div className="search-books-bar">
-              <Link to= "/" className="close-search">Close</Link>
+              <Link to= "/" className="close-search" >Close</Link>
               <div className="search-books-input-wrapper">
                 {/*
                   NOTES: The search from BooksAPI is limited to a particular set of search terms.
