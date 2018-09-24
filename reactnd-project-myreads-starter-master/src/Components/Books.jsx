@@ -24,10 +24,10 @@ export default class Books extends Component {
   render() {
 
     const { book }= this.props;
-    const { shelf}= this.state;
+    const { shelf }= this.state;
     const { imageLinks = [], title, authors = ['Author Not Listed'] }=book;
     const { thumbnail = '' } = imageLinks;
-    console.log(book);
+    //console.log(book);
     return (
 
        <li>

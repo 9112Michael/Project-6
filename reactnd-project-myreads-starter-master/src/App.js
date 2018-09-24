@@ -3,6 +3,7 @@ import * as BooksAPI from './Data/BooksAPI'
 import './App.css'
 import SearchPage from './Components/Searchpage'
 import MainPage from './Components/Mainpage'
+import { Route } from 'react-router-dom';
 //import {APIBooks} from './Data/Bookdata'
 
 class BooksApp extends React.Component {
@@ -62,15 +63,29 @@ constructor(props) {
 
     return (
       <div className="app">
-        {this.state.showSearchPage ? (
-         <SearchPage backClick={this.backClick} book={books} swapShelf={this.swapShelf} />
-        ) : (
-         <MainPage
-          books={books}
-          searchClick={this.searchClick}
-          swapShelf={this.swapShelf}
-           />
-        )}
+      <Route
+        exact 
+        path='/'
+        render = {() => 
+          (
+            <MainPage
+             books={books}
+             searchClick={this.searchClick}
+             swapShelf={this.swapShelf}
+              />
+           )
+        }
+      
+      />
+      <Route 
+        path='/search'
+        render = {()=>
+          (
+            <SearchPage backClick={this.backClick} book={books} swapShelf={this.swapShelf} />
+           )
+        }
+       />
+       
       </div>
     )
   }

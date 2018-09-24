@@ -20,7 +20,7 @@ export default class Mainpage extends Component {
 
   render() {
 
-      const {searchClick, books, swapShelf} = this.props;
+      const { books, swapShelf} = this.props;
       const shelves= this.shelveBooks(books);
       
 
@@ -39,7 +39,7 @@ export default class Mainpage extends Component {
          </div>
        </div>
        <div className="open-search">
-         <Link to="/search" onClick={searchClick}>Add a book</Link>
+         <Link to="/search">Add a book</Link>
        </div>
      </div>
      //End Main page

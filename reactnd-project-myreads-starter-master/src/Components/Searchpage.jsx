@@ -35,14 +35,14 @@ export default class Searchpage extends Component {
   
   render() {
 
-      const { backClick, swapShelf } = this.props;
+      const { swapShelf } = this.props;
       const { books } = this.state;
 
     return (
         //Beginning Search page
           <div className="search-books">
             <div className="search-books-bar">
-              <Link to= "/" className="close-search" onClick={backClick}>Close</Link>
+              <Link to= "/" className="close-search">Close</Link>
               <div className="search-books-input-wrapper">
                 {/*
                   NOTES: The search from BooksAPI is limited to a particular set of search terms.
