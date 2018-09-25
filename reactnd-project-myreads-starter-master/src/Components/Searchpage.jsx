@@ -10,13 +10,12 @@ export default class Searchpage extends Component {
   
     this.state = {
        books: [],
-       query: '',
-       input: ''
+       query: ''
     }
   }
 
-  synchronizeBooks = (query) => {
-    return(query.map(book => {
+  synchronizeBooks = (queryAllBooks) => {
+    return(queryAllBooks.map(book => {
       const bookMine = this.props.book.find(item => item.id === book.id);
       if (bookMine) {
         book['shelf'] = bookMine.shelf;
@@ -29,7 +28,8 @@ export default class Searchpage extends Component {
   inputDiff = (evt) => {
     const query = evt.target.value;
     this.setState({ query });
-    BooksAPI.search(query).then(res => this.setState({ books: this.synchronizeBooks(res) })
+    BooksAPI.search(query)
+    .then(res => this.setState({ books: Array.isArray(res) ? this.synchronizeBooks(res) : [] })
       );
   }
   
