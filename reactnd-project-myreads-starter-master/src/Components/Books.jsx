@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 export default class Books extends Component {
-  //One way
   constructor(props) {
     super(props)
   
@@ -10,7 +9,6 @@ export default class Books extends Component {
     }
   }
 
-  //2nd way
   componentDidMount = () => {
     this.setState({shelf: this.props.book.shelf})
   }
