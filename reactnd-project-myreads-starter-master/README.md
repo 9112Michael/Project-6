@@ -84,24 +84,18 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
-
 
 ### Acknowledgements
 
 This project was completed using the following resources for which I am sincerely grateful!  
 
-* P6 Walkthough by _Rodrick Bloomfield_
+* P6 Walkthough by _Rodrick Bloomfield_  
     React 1 Webinar: Intro (08-28) conducted by @Rodrick [FEND] - Google Drive    
     React 2 Webinar: Components (09-04) conducted by @Rodrick [FEND] - Google Drive  
     React 2 Webinar, Alternate Version: Components (09-09) conducted by @Rodrick [FEND] - Google Drive  
     React 3 Webinar: State (09-12) conducted by @Rodrick [FEND] - Google Drive
 
-**_Grow with Google_  _SLACK_** channel: Project 5
+**_Grow with Google_  _SLACK_** channel: Project 5  
 **Starter Code and Project _provided by_  _Udacity_ via _GitHub_**  
   
 * React(https://reactjs.org/)  
@@ -110,9 +104,9 @@ This project was completed using the following resources for which I am sincerel
 * Medium.com
 
 #### Languages and Dependencies
-ES6(JavaScript)
-CSS
-HTML5
-Markdown  
-React    
-JSX
+__ES6(JavaScript)__
+__CSS__
+__HTML5__
+__Markdown__  
+__React__    
+__JSX__
