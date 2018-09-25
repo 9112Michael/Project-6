@@ -104,9 +104,9 @@ This project was completed using the following resources for which I am sincerel
 * Medium.com
 
 #### Languages and Dependencies
-__ES6(JavaScript)__
-__CSS__
-__HTML5__
-__Markdown__  
-__React__    
+__ES6(JavaScript)__  
+__CSS__  
+__HTML5__  
+__Markdown__    
+__React__      
 __JSX__
