@@ -95,12 +95,12 @@ This project was completed using the following resources for which I am sincerel
     React 2 Webinar, Alternate Version: Components (09-09) conducted by @Rodrick [FEND] - Google Drive  
     React 3 Webinar: State (09-12) conducted by @Rodrick [FEND] - Google Drive
 
-**_Grow with Google_  _SLACK_** channel: Project 5  
+**_Grow with Google_  _SLACK_** channel: Project 6    
 **Starter Code and Project _provided by_  _Udacity_ via _GitHub_**  
   
 * React(https://reactjs.org/)  
 * Traversy Media  
-* Tyler McGuinness  
+* Tyler McGinnis  
 * Medium.com
 
 #### Languages and Dependencies
