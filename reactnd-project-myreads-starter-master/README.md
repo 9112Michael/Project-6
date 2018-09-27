@@ -103,10 +103,11 @@ This project was completed using the following resources for which I am sincerel
 * Tyler McGinnis  
 * Medium.com
 
-#### Languages and Dependencies
+#### Languages, Frameworks and Dependencies
 __ES6(JavaScript)__  
 __CSS__  
 __HTML5__  
 __Markdown__    
 __React__      
 __JSX__
+__Node.js__
