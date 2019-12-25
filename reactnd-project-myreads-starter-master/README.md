@@ -1,4 +1,5 @@
 # MyReads Udacity FEND Project #6
+
 ---
 
 I used the starter template for the sixth project of Udacity's 2018 Front End Nanodegree course. This template saved me time by providing a static example of the CSS and HTML markup, but without any of the React code that was needed to complete the project. I added interactivity to the app by refactoring the static code in the template  by using [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
@@ -11,6 +12,7 @@ To run this project:
 * start the development server with `npm start`
 
 ## What You're Getting
+
 ```bash
 ├── CONTRIBUTING.md
 ├── README.md - This file.
@@ -78,36 +80,37 @@ search(query)
 * These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
 
 ## Important
+
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-
 ### Acknowledgements
 
 This project was completed using the following resources for which I am sincerely grateful!  
 
 * P6 Walkthough by _Rodrick Bloomfield_  
-    React 1 Webinar: Intro (08-28) conducted by @Rodrick [FEND] - Google Drive    
+    React 1 Webinar: Intro (08-28) conducted by @Rodrick [FEND] - Google Drive
     React 2 Webinar: Components (09-04) conducted by @Rodrick [FEND] - Google Drive  
     React 2 Webinar, Alternate Version: Components (09-09) conducted by @Rodrick [FEND] - Google Drive  
     React 3 Webinar: State (09-12) conducted by @Rodrick [FEND] - Google Drive
 
-**_Grow with Google_  _SLACK_** channel: Project 6    
+**_Grow with Google_  _SLACK_** channel: Project 6
 **Starter Code and Project _provided by_  _Udacity_ via _GitHub_**  
   
-* React(https://reactjs.org/)  
+* React(<https://reactjs.org/)>  
 * Traversy Media  
 * Tyler McGinnis  
 * Medium.com
 
 #### Languages, Frameworks and Dependencies
+
 __ES6(JavaScript)__  
 __CSS__  
 __HTML5__  
-__Markdown__    
-__React__      
+__Markdown__
+__React__
 __JSX__
 __Node.js__
